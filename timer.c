@@ -98,6 +98,8 @@ void TIM3_PWM_Init(u16 arr,u16 psc)
 	TIM_OC2PreloadConfig(TIM3, TIM_OCPreload_Enable);  //使能TIM3在CCR2上的预装载寄存器
  
 	TIM_Cmd(TIM3, ENABLE);  //使能TIM3
+
+	TIM_Cmd(TIM3, DISABLE);  //使能TIM3
 	
 
 }
